@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Angelika Leus — Full-stack web developer building reliable, practical digital solutions.">
+  <title>Angelika Leus | Full-Stack Developer</title>
+  <style>
+    :root{--bg:#fbfbfa;--ink:#191a1d;--muted:#717784;--line:#e8e9eb;--accent:#16181c;--panel:#fff}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background-color:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6}
+    body:before{content:"";position:absolute;inset:0 0 auto;height:900px;z-index:-1;pointer-events:none;background-image:linear-gradient(to right,rgba(19,27,38,.032) 1px,transparent 1px),linear-gradient(to bottom,rgba(19,27,38,.032) 1px,transparent 1px);background-size:50px 50px;mask-image:linear-gradient(to bottom,black,transparent)}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1180px,calc(100% - 48px));margin:auto}
+    header{height:94px;display:flex;align-items:center;justify-content:space-between;gap:30px}.brand{font-weight:780;font-size:19px;white-space:nowrap;letter-spacing:-.6px}.nav{display:flex;align-items:center;gap:30px;color:#707680;font-weight:600;font-size:14px}.nav a:hover{color:#17181b}.resume{border:1px solid var(--line);border-radius:9px;padding:10px 15px;color:var(--ink);background:#fff;white-space:nowrap}
+    .hero{min-height:710px;display:grid;grid-template-columns:minmax(0,1.2fr) minmax(270px,.8fr);align-items:center;gap:75px;padding:70px 0 90px}
+    .eyebrow{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;color:#6f7882;letter-spacing:2px;text-transform:uppercase;font-size:12px;font-weight:700;margin:0 0 22px}
+    h1{font-size:clamp(48px,5.65vw,81px);letter-spacing:-4.7px;line-height:1.04;margin:0 0 28px;font-weight:820;max-width:800px} .intro{font-size:18px;color:var(--muted);line-height:1.85;max-width:620px;margin:0 0 30px}
+    .stats{display:flex;gap:24px;flex-wrap:wrap;margin:32px 0 34px;align-items:baseline}.stat{display:flex;gap:9px;align-items:baseline}.stat b{font-size:25px}.stat span{font:11px/1.5 ui-monospace,SFMono-Regular,Menlo,monospace;color:#737c87;letter-spacing:.3px;text-transform:uppercase}
+    .actions{display:flex;gap:15px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 25px;border:1.5px solid #191a1d;border-radius:6px;font-weight:650;font-size:15px}.btn.dark{background:#17181c;color:#fff}.btn:hover{transform:translateY(-2px);transition:transform .2s}
+    .portrait{width:min(100%,410px);aspect-ratio:1;border-radius:50%;border:5px solid white;box-shadow:0 14px 38px #00000020;justify-self:end;overflow:hidden;background:linear-gradient(145deg,#e8e8e8,#bebebe);display:grid;place-items:center;color:#50555a}
+    .portrait img{width:100%;height:100%;object-fit:cover}.portrait .placeholder{display:grid;place-items:center;text-align:center;padding:25px;font-size:15px;line-height:1.7}.placeholder svg{width:85px;opacity:.55;margin-bottom:14px}
+    .stack{border:1px solid var(--line);border-radius:15px;background:var(--panel);padding:23px;display:flex;justify-content:center;gap:14px;flex-wrap:wrap;align-items:center}.stack-label{font:12px ui-monospace,monospace;color:#848c96;margin-right:8px}.chip{border:1px solid var(--line);border-radius:7px;padding:5px 12px;font-size:12px;font-weight:600;background:#fff}
+    section.content{padding:115px 0 40px}.sectionhead{font-size:39px;letter-spacing:-1.6px;margin:0 0 10px}.sub{color:var(--muted);margin:0 0 38px}.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.project{background:white;border:1px solid var(--line);padding:28px;border-radius:14px}.project .number{color:#989da5;font:12px ui-monospace,monospace}.project h3{font-size:20px;line-height:1.3;margin:18px 0 10px}.project p{color:var(--muted);font-size:14px;margin:0}.project small{display:block;margin-top:22px;color:#59606a}.contact{padding-bottom:110px}footer{border-top:1px solid var(--line);padding:23px 0;color:#9298a0;font-size:12px}
+    @media(max-width:900px){.nav{gap:13px}.hero{gap:35px;min-height:620px}h1{letter-spacing:-2.8px}.intro{font-size:16px}}
+    @media(max-width:700px){.wrap{width:min(100% - 34px,1180px)}header{height:auto;padding:22px 0;align-items:flex-start}.nav{gap:12px;flex-wrap:wrap;justify-content:flex-end;font-size:12px}.nav .extra{display:none}.hero{display:flex;flex-direction:column-reverse;text-align:center;gap:35px;padding:35px 0 55px;min-height:0}.portrait{width:min(65vw,250px);justify-self:center}.eyebrow{margin-bottom:16px}h1{font-size:clamp(41px,9vw,59px);letter-spacing:-2.5px}.intro{font-size:15px;margin-inline:auto}.stats,.actions{justify-content:center}.stats{gap:15px}.stat b{font-size:21px}.stat span{font-size:10px}.projects{grid-template-columns:1fr}section.content{padding-top:85px}.sectionhead{font-size:32px}.stack{justify-content:flex-start}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="#home">Angelika Leus<span style="color:#858a93">.</span></a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#about" class="extra">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills" class="extra">Skills</a>
+        <a href="#contact">Contact</a>
+        <a class="resume" href="#contact">Let's Talk ↗</a>
+      </nav>
+    </header>
+    <main>
+      <div class="hero" id="home">
+        <div>
+          <p class="eyebrow">Full-stack web developer · Philippines</p>
+          <h1>I build systems<br>that make work<br>easier.</h1>
+          <p class="intro">I'm Angelika, a full-stack developer focused on building reliable web applications, simplifying workflows, and connecting systems through thoughtful design and clean code.</p>
+          <div class="stats">
+            <div class="stat"><b>PHP</b><span>Laravel</span></div>
+            <div class="stat"><b>Vue</b><span>JavaScript</span></div>
+            <div class="stat"><b>API</b><span>Integrations</span></div>
+          </div>
+          <div class="actions"><a class="btn dark" href="#projects">View My Work →</a><a class="btn" href="#contact">Get In Touch ↗</a></div>
+        </div>
+        <div class="portrait" aria-label="Photo placeholder">
+          <!-- To add your portrait, upload a file named profile.jpg beside index.html, then replace this placeholder with: <img src="profile.jpg" alt="Portrait of Angelika Leus"> -->
+          <div class="placeholder"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="32" r="18"/><path d="M16 91c0-22 15-38 34-38s34 16 34 38"/></svg><span>Your professional<br>portrait goes here</span></div>
+        </div>
+      </div>
+      <div class="stack" id="skills"><span class="stack-label">TECH STACK:</span><span class="chip">Laravel</span><span class="chip">PHP</span><span class="chip">Vue.js</span><span class="chip">JavaScript</span><span class="chip">MySQL</span><span class="chip">REST APIs</span><span class="chip">Git</span><span class="chip">HTML / CSS</span></div>
+      <section class="content" id="about"><h2 class="sectionhead">About me.</h2><p class="sub">I design and develop web-based systems that support real-world teams and workflows. I enjoy turning complex processes into practical, easy-to-use tools.</p></section>
+      <section class="content" id="projects"><h2 class="sectionhead">Selected work.</h2><p class="sub">A few types of systems I've worked on. Project details can be added once approved for public sharing.</p><div class="projects"><article class="project"><span class="number">01 / WORKFLOW</span><h3>Document Tracking System</h3><p>Digital document processing, status tracking, and workflow management.</p><small>Web development · Database</small></article><article class="project"><span class="number">02 / MONITORING</span><h3>Project Monitoring Platform</h3><p>System dashboards and tools for collecting and monitoring project information.</p><small>Laravel · Vue.js · MySQL</small></article><article class="project"><span class="number">03 / INTEGRATIONS</span><h3>API & Data Integration</h3><p>Connecting applications and improving information exchange across services.</p><small>REST APIs · PHP</small></article></div></section>
+      <section class="content contact" id="contact"><h2 class="sectionhead">Let's work together.</h2><p class="sub">Available to discuss web development, systems enhancement, and integration projects.</p><a class="btn dark" href="https://github.com/leusangelika" target="_blank" rel="noopener noreferrer">Visit My GitHub ↗</a></section>
+    </main>
+    <footer>© <span id="year">2026</span> Angelika Leus. Built with HTML & CSS.</footer>
+  </div>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
